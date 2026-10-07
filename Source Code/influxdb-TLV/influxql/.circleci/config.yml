@@ -1,0 +1,21 @@
+version: 2.1
+
+jobs:
+  test:
+    docker:
+      - image: cimg/go:1.18
+    steps:
+      - checkout
+      - run:
+          name: Run vet
+          command: go vet ./...
+      - run:
+          name: Run tests
+          command: go test ./...
+          when: always
+
+workflows:
+  version: 2.1
+  on_push:
+    jobs:
+      - test

@@ -1,0 +1,10 @@
+SelectGroup=true      // 为组进行实验
+CacheAnalyseOption=true   // 是否统计Cache内容
+CacheFlushTimeOption=true   // 是否统计Cache刷盘时间
+IndexAnalyseOption=true    // 是否统计索引内容
+IndexTimeAnalyseOption=true // 统计倒排索引维护时间
+CacheFilePath=rootpath/option/res/cache/cache.log // cache统计内容
+CacheFlushTimePath=rootpath/option/res/cache/cache_time.log // cache刷盘时间
+IndexFilePath=rootpath/option/res/index/index.log // index统计输出路径
+IndexTimeFilePath=rootpath/option/res/index/index_time.log // index维护时间内容
+LRUCacheSize=10000 // LRU缓存大小

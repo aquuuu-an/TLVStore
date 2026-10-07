@@ -1,0 +1,96 @@
+{
+  "measurement-group": [
+	{
+		"database": "lwq",
+		"ms-name": "graphstream",
+		"tag-keys": "region,datacenter,rack,os,arch,team,service,service_version,service_environment,source,destination",
+		"group-tags": "service_environment,os,arch,team,service_version,source",
+		"field-keys": "usage_user(integer),usage_system(integer),usage_idle(integer),usage_nice(integer),usage_iowait(integer),usage_irq(integer),usage_softirq(integer),usage_steal(integer),usage_guest(integer),usage_guest_nice(integer)"
+	},
+    {
+		"database" : "lwq",
+		"ms-name": "cpu",
+		"tag-keys": "hostname,region,datacenter,rack,os,arch,team,service,service_version,service_environment",
+		"group-tags": "service_environment,os,arch,team,service_version",
+		"field-keys": "usage_user(integer),usage_system(integer),usage_idle(integer),usage_nice(integer),usage_iowait(integer),usage_irq(integer),usage_softirq(integer),usage_steal(integer),usage_guest(integer),usage_guest_nice(integer)"
+    },
+	{
+		"database":"lwq",
+		"ms-name":"diskio",
+		"tag-keys":"service_environment,rack,hostname,os,serial,service,datacenter,service_version,team,arch,region",
+		"group-tags":"service_environment,os,arch,team,service_version",
+		"field-keys":"read_time(integer),write_bytes(integer),reads(integer),write_time(integer),writes(integer),read_bytes(integer),io_time(integer)"
+	},
+	{
+		"database":"lwq",
+		"ms-name":"postgresl",
+		"tag-keys":"service_environment,rack,hostname,os,service,datacenter,service_version,team,arch,region",
+		"group-tags":"service_environment,os,arch,team,service_version",
+		"field-keys":"tup_returned(integer),temp_files(integer),blk_write_time(integer),xact_commit(integer),blks_hit(integer),blk_read_time(integer),numbackends(integer),tup_fetched(integer),tup_updated(integer),xact_rollback(integer),tup_deleted(integer),conflicts(integer),blks_read(integer),temp_bytes(integer),deadlocks(integer),tup_inserted(integer)"
+	},
+	{
+		"database":"lwq",
+		"ms-name":"disk",
+		"tag-keys":"path,service_environment,rack,hostname,os,service,datacenter,service_version,team,arch,region,fstype",
+		"group-tags":"service_environment,os,arch,team,service_version",
+		"field-keys":"total(integer),inodes_used(integer),inodes_total(integer),inodes_free(integer),used_percent(integer),used(integer),free(integer)"
+	},
+	{
+		"database":"lwq",
+		"ms-name":"mem",
+		"tag-keys":"service_environment,rack,hostname,os,service,datacenter,service_version,team,arch,region",
+		"group-tags":"service_environment,os,arch,team,service_version",
+		"field-keys":"total(integer),available_percent(integer),cached(integer),available(integer),buffered(integer),buffered_percent(integer),used_percent(integer),used(integer),free(integer)"
+	},
+	{
+		"database":"lwq",
+		"ms-name":"nginx",
+		"tag-keys":"server,service_environment,rack,hostname,os,port,service,datacenter,service_version,team,arch,region",
+		"group-tags":"service_environment,os,arch,team,service_version",
+		"field-keys":"waiting(integer),accepts(integer),handled(integer),writing(integer),active(integer),reading(integer),requests(integer)"
+	},
+	{
+		"database":"lwq",
+		"ms-name":"kernel",
+		"tag-keys":"service_environment,rack,hostname,os,service,datacenter,service_version,team,arch,region",
+		"group-tags":"service_environment,os,arch,team,service_version",
+		"field-keys":"processes_forked(integer),boot_time(integer),disk_pages_in(integer),disk_pages_out(integer),interrupts(integer),context_switches(integer)"
+	},
+	{
+		"database":"lwq",
+		"ms-name":"cpu",
+		"tag-keys":"service_environment,rack,hostname,os,service,datacenter,service_version,team,arch,region",
+		"group-tags":"service_environment,os,arch,team,service_version",
+		"field-keys":"usage_system(integer),usage_nice(integer),usage_irq(integer),usage_user(integer),usage_guest(integer),usage_idle(integer),usage_guest_nice(integer),usage_steal(integer),usage_iowait(integer),usage_softirq(integer)"
+	},
+	{
+		"database":"lwq",
+		"ms-name":"net",
+		"tag-keys":"service_environment,rack,hostname,os,service,datacenter,service_version,team,arch,interface,region",
+		"group-tags":"service_environment,os,arch,team,service_version",
+		"field-keys":"packets_recv(integer),drop_out(integer),packets_sent(integer),err_out(integer),bytes_recv(integer),err_in(integer),bytes_sent(integer),drop_in(integer)"
+	},
+	{
+		"database":"lwq",
+		"ms-name":"redis",
+		"tag-keys":"server,service_environment,rack,hostname,os,port,service,datacenter,service_version,team,arch,region",
+		"group-tags":"service_environment,os,arch,team,service_version",
+		"field-keys":"used_cpu_sys(integer),repl_backlog_size(integer),connected_slaves(integer),uptime_in_seconds(integer),sync_full(integer),connected_clients(integer),used_memory_lua(integer),pubsub_channels(integer),sync_partial_err(integer),instantaneous_input_kbps(integer),rdb_changes_since_last_save(integer),mem_fragmentation_ratio(integer),used_cpu_sys_children(integer),master_repl_offset(integer),sync_partial_ok(integer),pubsub_patterns(integer),used_memory_rss(integer),used_cpu_user(integer),latest_fork_usec(integer),repl_backlog_histlen(integer),expired_keys(integer),used_memory(integer),keyspace_misses(integer),evicted_keys(integer),instantaneous_output_kbps(integer),repl_backlog_active(integer),keyspace_hits(integer),instantaneous_ops_per_sec(integer),used_memory_peak(integer),used_cpu_user_children(integer),total_connections_received(integer)"
+	},
+	{
+		"database":"lwq",
+		"ms-name":"diagnostics",
+		"tag-keys":"device_version,fleet,driver,name,model",
+		"group-tags":"device_version,fleet,driver,model",
+		"field-keys":"fuel_state(float),fuel_capacity(float),nominal_fuel_consumption(float),current_load(float),load_capacity(float),status(integer)"
+	},
+	{
+		"database":"lwq",
+		"ms-name":"readings",
+		"tag-keys":"device_version,fleet,driver,name,model",
+		"group-tags":"device_version,fleet,driver,model",
+		"field-keys":"elevation(float),heading(float),fuel_capacity(float),nominal_fuel_consumption(float),latitude(float),grade(float),fuel_consumption(float),velocity(float),load_capacity(float),longitude(float)"
+	}
+  ]
+}
+

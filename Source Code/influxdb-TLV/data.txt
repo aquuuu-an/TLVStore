@@ -1,0 +1,3 @@
+cpu,host=server02,region=uswest load=78 1422568543702900257
+cpu,host=server03,region=usnorth load=780 1422568543702900258
+cpu,host=server04,region=useest load=18 1422568543702900259

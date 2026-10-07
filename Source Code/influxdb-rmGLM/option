@@ -1,0 +1,10 @@
+SelectGroup=true      // 为组进行实验
+CacheAnalyseOption=false    // 是否统计Cache内容
+CacheFlushTimeOption=false   // 是否统计Cache刷盘时间
+IndexAnalyseOption=false    // 是否统计索引内容
+IndexTimeAnalyseOption=false // 统计倒排索引维护时间
+CacheFilePath=D:\\聂喜玲\\聂喜玲\\程序\\源码\\influxdb\\res\\cache\\cache.log // cache统计内容
+CacheFlushTimePath=D:\\聂喜玲\\聂喜玲\\程序\\源码\\influxdb\\res\\cache\\cache_time.log // cache刷盘时间
+IndexFilePath=D:\\聂喜玲\\聂喜玲\\程序\\源码\\influxdb\\res\\index\\index.log // index统计输出路径
+IndexTimeFilePath=D:\\聂喜玲\\聂喜玲\\程序\\源码\\influxdb\\res\\index\\index_time.log // index维护时间内容
+LRUCacheSize=10000 // LRU缓存大小

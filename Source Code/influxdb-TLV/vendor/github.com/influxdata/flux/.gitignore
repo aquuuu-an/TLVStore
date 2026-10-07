@@ -1,0 +1,16 @@
+bin
+vendor
+target
+/dist
+.DS_Store
+.netrc
+.vscode
+.vs
+.tern-project
+.idea
+/coverage.txt
+/libflux/c/libflux_memory_tester
+/libflux/pkg
+/libflux/site/node_modules
+/libflux/.cache
+/release-notes.txt

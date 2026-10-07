@@ -1,0 +1,28 @@
+# Local repository metadata and editor caches
+.git/
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+
+# Experiment datasets, database state and generated results
+/Experimental Scripts/testInfluxDB/data/
+/Experimental Scripts/testInfluxDB/option/influxdb-data/
+/Experimental Scripts/testInfluxDB/final-result/
+/Experimental Scripts/testInfluxDB/result/
+/Experimental Scripts/testInfluxDB/log/
+/Experimental Scripts/testInfluxDB/monitor/data/
+/Experimental Scripts/testInfluxDB/option/log/
+/Experimental Scripts/testInfluxDB/option/res/
+/Source Code/*/output.txt
+
+# Compiled executables (keep executable configuration files)
+*.exe
+influxd-optimized
+/Experimental Scripts/testInfluxDB/executable/*
+!/Experimental Scripts/testInfluxDB/executable/config.txt
+!/Experimental Scripts/testInfluxDB/executable/influxd.config
+
+# Database state stored alongside the source
+influxdb-data/
+.influxdb/
